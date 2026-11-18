@@ -6,6 +6,11 @@
   <meta name="keywords" content="Squishies, squishies originales, squishies kawaii, juguetes antiestrés, juguetes suaves, squishys coleccionables, squishys en tendencia, tienda de squishies, Squishyland">
   <meta name="author" content="Camila Almanza Reyes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+
 <title>Squishyland | Tu Mundo de Squihys</title>
 
 </head>
@@ -15,32 +20,80 @@
 <body>
 
 <!-- ========== ENCABEZADO DE LA PAGINA ========== -->
- <header class=""header-Squishyland>">
-   <div class="cointainer header-inicio>
-       <a href="#inicio" class="logo-Squishyland">
-           <img src="img/logo.png" alt="Logo de Squishyland">
-       </a>
 
-    <nav class="nav-Squishyland">
-      <ul>
-         
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#beneficios">Beneficios</a></li>
-          <li><a href="#oferta">Oferta</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+<header class="header-Squishyland">
+    <div class="container header-inicio">
 
-      </ul>
+        <a href="#inicio" class="logo-Squishyland">
+            <img src="img/logo.png" alt="Logo de Squishyland">
+        </a>
 
-      <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Squishyland.')">
-          <i data-lucide="message-circle"></i> Pedir ahora
-        </button>
+        <nav class="nav-Squishyland">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Squishyland.')">
+                <i data-lucide="message-circle"></i> Pedir ahora
+            </button>
+        </nav>
 
     </div>
-    </header>
+</header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
+
+<!-- ============= CONTENIDO PRINCIPAL ============= -->
+
+<main>
+
+    <!-- ============= SECCIÓN DEL HERO ============= -->
+
+    <section id="inicio" class="hero">
+        <div class="container hero-inicio">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">¡Un mundo lleno de suavidad y ternura!</p>
+
+                <h1>SQUISHYLAND</h1>
+
+                <p class="lead">
+                    Descubre squishies adorables, suaves y originales.
+                    Encuentra tus favoritos y dale un toque de diversión
+                    y ternura a tu día.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#productos" class="btn primary">Ver productos</a>
+
+                    <button type="button" class="btn outline" onclick="openWhatsApp('Hola, me gustaría conocer los squishies disponibles en Squishyland.')">
+                        Comprar por WhatsApp
+                    </button>
+                </div>
+
+                <p class="trust">
+                    <i data-lucide="heart"></i>
+                    ¡Pequeños squishies, grandes sonrisas!
+                </p>
+
+            </div>
+
+            <div class="hero-imagen">
+                <img src="img/squishy-hero.png" alt="Colección de squishies adorables de Squishyland">
+
+                <span class="tag tag-love">Suaves y adorables</span>
+
+                <span class="tag tag-custom">¡Encuentra tu favorito!</span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
 </body>
 </html>
