@@ -8,10 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css">
 
-<title>Squishyland | Tu Mundo de Squihys</title>
+<title>Squishyland | Tu Mundo de Squishies</title>
 
 </head>
 <!-- AQUI INICIA EL CUERPO DE MI PÁGINA -->
@@ -53,47 +55,109 @@
 
     <!-- ============= SECCIÓN DEL HERO ============= -->
 
-    <section id="inicio" class="hero">
-        <div class="container hero-inicio">
+<section class="intro" aria-labelledby="intro-title">
+      <p class="intro-eyebrow">BIENVENIDO SQUISHYLAND</p>
+      <h1 class="intro-title" id="intro-title">SQUISHY<br><span>PARADISE</span></h1>
+      <p class="intro-description"> Descubre nuestra colección de Squishies adorables y encuentra tus favoritos.</p>
+    </section>
 
-            <div class="hero-text">
+        <!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
 
-                <p class="eyebrow">¡Un mundo lleno de suavidad y ternura!</p>
 
-                <h1>SQUISHYLAND</h1>
+      <!-- VIDEO -->
+<article class="media-card media-cardvideo" data-video-card>
 
-                <p class="lead">
-                    Descubre squishies adorables, suaves y originales.
-                    Encuentra tus favoritos y dale un toque de diversión
-                    y ternura a tu día.
-                </p>
+    <video
+        class="media-card__media media-card__video"
+        data-hover-video
+        muted
+        loop
+        playsinline
+        autoplay
+        preload="metadata"
+        aria-label="Video de presentación">
 
-                <div class="hero-actions">
-                    <a href="#productos" class="btn primary">Ver productos</a>
+        <source src="img/video.mp4" type="video/mp4">
 
-                    <button type="button" class="btn outline" onclick="openWhatsApp('Hola, me gustaría conocer los squishies disponibles en Squishyland.')">
-                        Comprar por WhatsApp
-                    </button>
-                </div>
+        Tu navegador no puede reproducir este video.
+    </video>
 
-                <p class="trust">
-                    <i data-lucide="heart"></i>
-                    ¡Pequeños squishies, grandes sonrisas!
-                </p>
+    <div class="media-card__shade" aria-hidden="true"></div>
 
-            </div>
+    <div class="media-card__content">
+        <p class="media-card__number">01 / SQUISHYLAND</p>
 
-            <div class="hero-imagen">
-                <img src="img/squishy-hero.png" alt="Colección de squishies adorables de Squishyland">
+        <h2 class="media-card__title">
+            UN MUNDO<br>DE TERNURA
+        </h2>
 
-                <span class="tag tag-love">Suaves y adorables</span>
+        <a class="media-card__link" href="#productos">
+            Entrar al paraíso <span aria-hidden="true">↗</span>
+        </a>
+    </div>
 
-                <span class="tag tag-custom">¡Encuentra tu favorito!</span>
-            </div>
+    <button class="video-toggle" type="button" data-video-toggle aria-label="Pausar video" aria-pressed="true">
+        <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">Ⅱ</span>
+        <span class="video-toggle__text" data-toggle-text>Pausar video</span>
+    </button>
 
+</article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/squishys1.jpeg"
+          alt="Fotografía de mis productos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+        <p class="media-card__number">02 / NUESTRA COLECCIÓN</p>
+         <h2 class="media-card__title">PEQUEÑOS<br>MOMENTOS DE TERNURA</h2>
+         <a class="media-card__link" href="#productos">
+         Encuentra tu favorito <span aria-hidden="true">↗</span></a>
         </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/squishys3.jpeg"
+          alt="Fotografía que representa mis proyectos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / NUESTRO MUNDO</p>
+          <h2 class="media-card__title">SUAVIDAD<br>EN CADA DETALLE</h2>
+          <a class="media-card__link" href="#beneficios">
+           Descubre la suavidad <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
     </section>
 
 </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> TU MARCA. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
 </body>
 </html>
