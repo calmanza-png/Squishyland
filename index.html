@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- Camila Almanza Reyes, trabajo pagina web SQUISHYLAND-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css">
@@ -161,7 +164,7 @@
           <p class="lead">Descubre squishies adorables para coleccionar, regalar y disfrutar.</p>
         </div>
 
-        <!-- SERVICIO 1 TARJETA -->
+        <!-- PRODUCTO 1 TARJETA -->
 
         <div class="product-grid">
           <article class="product-card reveal">
@@ -175,7 +178,7 @@
             </div>
           </article>
 
-            <!-- SERVICIO 2 TARJETA -->
+            <!-- PRODUCTO 2 TARJETA -->
             <article class="product-card reveal">
             <img src="img/squishys6.jpeg" alt="DESCRIPCIÓN">
             <div class="product-body">
@@ -188,7 +191,20 @@
             </article>
 
 
-        <!-- SERVICIO 3 TARJETA -->
+        <!-- PRODUCTO 3 TARJETA -->
+
+        <article class="product-card reveal">
+            <img src="img/imagen7.jpeg" alt="Ositos squishy de colores pastel">
+            <div class="product-body">
+               <span class="tag">Favorito</span>
+               <h3>Ositos de ensueño</h3>
+               <p class="price">$179 MXN</p>
+               <p class="description">Un osito lleno de ternura, ideal para apapachar y darle un toque adorable a tu colección.</p>
+               <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 4 TARJETA -->
 
         <article class="product-card reveal">
             <img src="img/squishys5.jpeg" alt="DESCRIPCIÓN">
@@ -201,10 +217,142 @@
             </div>
           </article>
 
+          <!-- PRODUCTO 5 TARJETA -->
+
+        <article class="product-card reveal">
+            <img src="img/imagen8.jpeg" alt="Squishies de frutitas">
+            <div class="product-body">
+                 <span class="tag">Nuevo</span>
+        <h3>Frutitas squishy</h3>
+        <p class="price">$129 MXN</p>
+        <p class="description">Pequeñas frutitas suaves y coloridas que harán tus momentos de descanso mucho más divertidos.</p>
+        <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 6 TARJETA -->
+
+        <article class="product-card reveal">
+            <img src="img/imagen9.jpg" alt="Squishy muffin">
+            <div class="product-body">
+                <span class="tag">Edición especial</span>
+        <h3>Nubes de algodón</h3>
+        <p class="price">$219 MXN</p>
+        <p class="description">Un muffin esponjoso para apachurrar, relajarte y llenar tu día de suavidad.</p>
+        <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+
 
       </div>
       </div>
-    </section>      
+    </section>    
+    
+    <!--sección diferenciadores-->
+
+  <section id="diferenciador" class="unicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>¿Por qué somos los mejores?</h2>
+        </div>
+
+
+        <div class="benefits-grid">
+          <!-- DIFERENCIADOR 1 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="sparkles"></i></div>
+            <h3>Diseños adorables</h3>
+            <p>Squishies únicos y llenos de ternura que te robarán el corazón.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 2 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="heart"></i></div>
+            <h3>Suavidad irresistible</h3>
+            <p>Perfectos para apachurrar, relajarte y disfrutar de cada momento.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 3 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="star"></i></div>
+            <h3>Tus favoritos en un solo lugar</h3>
+            <p>Encuentra diseños originales y en tendencia para ampliar tu colección.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 4 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="gift"></i></div>
+            <h3>El regalo perfecto</h3>
+            <p>Sorprende a alguien especial con un detalle bonito, divertido y lleno de ternura.</p>
+          </article>
+        </div>
+      </div></section>
+          <div>   
+
+          </div>
+          </section>
+
+<!-- TESTIMONIOS, HISTORIAS, OPINIONES, RESEÑAS, ETC-->
+
+ <section class="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">♡ Pequeñas historias, grandes sonrisas ♡</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+
+        <div class="testimonial-viewport">
+          <div id="testimonial-track" class="testimonial-track">
+
+            <!-- cliente 1 -->
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/cliente.jpg" alt="Fotografía de Valentina">
+                  <div>
+                    <p class="name">Valentina G.</p>
+                    <p class="occasion">Un regalo especial</p>
+                  </div>
+                </div>
+                <p class="quote">"Le compré un squishy a mi hermanita y le encantó. Está precioso, súper suave y llegó en perfectas condiciones."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+
+            <!-- cliente 2 -->
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/cliente2.jpg" alt="Fotografía de Sebastián">
+                  <div>
+                    <p class="name">Sebastián M.</p>
+                    <p class="occasion">Regalo de cumpleaños</p>
+                  </div>
+                </div>
+                  <p class="quote">"Me gustó muchísimo la presentación. Todo llegó muy bonito y el squishy es todavía más lindo en persona. ¡Volvería a comprar!"</p>
+                  <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+
+            <!-- cliente 3 -->
+
+
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/cliente3.jpg" alt="Fotografía de Renata">
+                  <div>
+                    <p class="name">Renata L.</p>
+                    <p class="occasion">Amante de los squishies</p>
+                  </div>
+                </div>
+                <p class="quote">"Ya quiero tener toda la colección. Son demasiado tiernos y me encanta tenerlos en mi escritorio. ¡Squishyland es mi nuevo favorito!"</p>
+               <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
 
 </main>
 
@@ -218,6 +366,8 @@
     </a>
 
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
